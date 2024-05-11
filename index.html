@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .bebas-neue-regular {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #101315;
+      width: 1920px;
+      height: 1080px;
+      color: white;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    #digital {
+      display: flex;
+      font-size: 555px;
+      color: #9c9c9c;
+    }
+
+    #digital .spacer {
+      display: flex;
+      width: 80px;
+    }
+
+    #digital .digit {
+      display: flex;
+      min-width: 100px;
+      text-align: center;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clock">
+    <div id="digital"></div>
+  </div>
+
+  <script>
+
+    //const $h = document.querySelector("#h");
+    //const $m = document.querySelector("#m");
+    const $digital = document.querySelector("#digital");
+
+    //const degPerMinute = 6;
+
+    let now = new Date();
+    let h = now.getHours();
+    let m = now.getMinutes();
+
+    $digital.innerHTML =
+      `<span class="digit">${h < 10 ? "0" + h : h}</span>
+            <span class="spacer">:</span>
+            <span class="digit">${m < 10 ? "0" + m : m}</span>`
+      ;
+
+    //let hDeg = h * 30;
+    //let mDeg = m * degPerMinute;
+
+    //$h.style.transform = `rotateZ(${hDeg + mDeg / 12}deg)`;
+    //$m.style.transform = `rotateZ(${mDeg}deg)`;
+
+  </script>
+</body>
+
+</html>

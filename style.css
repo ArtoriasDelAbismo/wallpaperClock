@@ -1,0 +1,72 @@
+
+  /*
+  .clock {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px;
+    box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+      inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+      0em 1.2em 1.2em rgba(0, 0, 0, 0.3),
+      inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+  .clock:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    border-radius: 50%;
+    z-index: 100;
+  }
+
+  .clock .hour,
+  .clock .min {
+    position: absolute;
+  }
+
+  .clock .hour,
+  #h {
+    width: 160px;
+    height: 160px;
+  }
+
+  .clock .min,
+  #m {
+    width: 190px;
+    height: 190px;
+  }
+
+  #h,
+  #m {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  #h:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 80px;
+    background: #ff47a0;
+    box-shadow: 0 0 6px 2px #ff47a0;
+    z-index: 10;
+    border-radius: 2.8px;
+  }
+
+  #m:before {
+    content: "";
+    position: absolute;
+    width: 3.5px;
+    height: 100px;
+    background: #48ceff;
+    box-shadow: 0 0 6px 2px #48ceff;
+    z-index: 11;
+    border-radius: 3px;
+  }
+*/
