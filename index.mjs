@@ -10,7 +10,7 @@ const html = readFileSync("./index.html", (err) => {
   return console.log(html);
 });
 
-// cron.schedule("* * * * *", () => {
+cron.schedule("* * * * *", () => {
   htmlToImage({
     output: "image.png",
     html: html.toString()
@@ -20,5 +20,5 @@ const html = readFileSync("./index.html", (err) => {
         console.log("Wallpaper set succesfully");
     })
     })
-  // });
+  });
 

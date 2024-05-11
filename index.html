@@ -14,15 +14,14 @@
       padding: 0;
       box-sizing: border-box;
     }
-
+  
     .bebas-neue-regular {
       font-family: "Bebas Neue", sans-serif;
       font-weight: 400;
       font-style: normal;
     }
-
-
-
+  
+  
     body {
       display: flex;
       justify-content: center;
@@ -36,24 +35,25 @@
       font-weight: 400;
       font-style: normal;
     }
-
+  
     #digital {
       display: flex;
       font-size: 555px;
       color: #9c9c9c;
     }
-
+  
     #digital .spacer {
       display: flex;
       width: 80px;
     }
-
+  
     #digital .digit {
       display: flex;
       min-width: 100px;
       text-align: center;
       border-radius: 10px;
     }
+
   </style>
 </head>
 
@@ -64,29 +64,20 @@
 
   <script>
 
-    //const $h = document.querySelector("#h");
-    //const $m = document.querySelector("#m");
     const $digital = document.querySelector("#digital");
-
-    //const degPerMinute = 6;
 
     let now = new Date();
     let h = now.getHours();
     let m = now.getMinutes();
 
-    $digital.innerHTML =
-      `<span class="digit">${h < 10 ? "0" + h : h}</span>
-            <span class="spacer">:</span>
-            <span class="digit">${m < 10 ? "0" + m : m}</span>`
-      ;
-
-    //let hDeg = h * 30;
-    //let mDeg = m * degPerMinute;
-
-    //$h.style.transform = `rotateZ(${hDeg + mDeg / 12}deg)`;
-    //$m.style.transform = `rotateZ(${mDeg}deg)`;
+    $digital.innerHTML =`
+      <span class="digit">${h < 10 ? "0" + h : h}</span>
+      <span class="spacer">:</span>
+      <span class="digit">${m < 10 ? "0" + m : m}</span>
+    `;
 
   </script>
+
 </body>
 
 </html>
