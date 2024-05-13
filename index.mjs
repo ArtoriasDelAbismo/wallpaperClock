@@ -20,5 +20,5 @@ cron.schedule("* * * * *", () => {
         console.log("Wallpaper set succesfully");
     })
     })
-  });
+});
 
